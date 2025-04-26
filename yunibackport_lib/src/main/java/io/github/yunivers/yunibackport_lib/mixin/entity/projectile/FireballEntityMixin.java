@@ -1,9 +1,9 @@
-package io.github.yunivers.yunibackport_r0.mixin.entity.projectile;
+package io.github.yunivers.yunibackport_lib.mixin.entity.projectile;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import com.llamalad7.mixinextras.sugar.Local;
-import io.github.yunivers.yunibackport_r0.impl.entity.projectile.YuniBackportFireballEntity;
+import io.github.yunivers.yunibackport_lib.impl.entity.projectile.YuniBackportFireballEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.FireballEntity;

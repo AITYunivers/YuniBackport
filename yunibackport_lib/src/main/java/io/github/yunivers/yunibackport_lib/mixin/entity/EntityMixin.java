@@ -1,6 +1,6 @@
-package io.github.yunivers.yunibackport_r0.mixin.entity;
+package io.github.yunivers.yunibackport_lib.mixin.entity;
 
-import io.github.yunivers.yunibackport_r0.impl.entity.YuniBackportEntity;
+import io.github.yunivers.yunibackport_lib.impl.entity.YuniBackportEntity;
 import net.minecraft.entity.Entity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;

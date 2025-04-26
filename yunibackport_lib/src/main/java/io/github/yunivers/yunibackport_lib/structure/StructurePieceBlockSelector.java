@@ -1,4 +1,4 @@
-package io.github.yunivers.yunibackport_r0.structure;
+package io.github.yunivers.yunibackport_lib.structure;
 
 import java.util.Random;
 

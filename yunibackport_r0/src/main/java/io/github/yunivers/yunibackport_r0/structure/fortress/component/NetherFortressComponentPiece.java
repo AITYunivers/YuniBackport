@@ -1,6 +1,6 @@
 package io.github.yunivers.yunibackport_r0.structure.fortress.component;
 
-import io.github.yunivers.yunibackport_r0.structure.*;
+import io.github.yunivers.yunibackport_lib.structure.*;
 import io.github.yunivers.yunibackport_r0.structure.fortress.*;
 
 import java.util.List;

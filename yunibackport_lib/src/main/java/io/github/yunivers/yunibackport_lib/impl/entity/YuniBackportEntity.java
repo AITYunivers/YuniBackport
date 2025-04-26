@@ -1,4 +1,4 @@
-package io.github.yunivers.yunibackport_r0.impl.entity;
+package io.github.yunivers.yunibackport_lib.impl.entity;
 
 import net.modificationstation.stationapi.api.util.Util;
 

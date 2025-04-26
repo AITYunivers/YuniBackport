@@ -1,4 +1,4 @@
-package io.github.yunivers.yunibackport_r0.util;
+package io.github.yunivers.yunibackport_lib.util;
 
 import net.minecraft.util.math.BlockPos;
 

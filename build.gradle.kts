@@ -1,9 +1,4 @@
-import babric.SubprojectHelpers.addDependencyXML
-import org.gradle.internal.extensions.stdlib.toDefaultLowerCase
-import java.io.BufferedReader
-import java.io.InputStreamReader
 import java.net.URI
-import java.net.URL
 
 plugins {
 	id("maven-publish")
@@ -16,8 +11,7 @@ inline fun <reified C> Project.configure(name: String, configuration: C.() -> Un
 	(tasks.getByName(name) as C).configuration()
 }
 
-allprojects
-{
+allprojects {
 	apply(plugin = "maven-publish")
 	apply(plugin = "fabric-loom")
 	apply(plugin = "babric-loom-extension")
@@ -42,48 +36,24 @@ allprojects
 		}
 	}
 
-	configurations {
-		val transitiveImplementation = create("transitiveImplementation")
-		implementation.get().extendsFrom(transitiveImplementation)
-
-		// Required cause loom 0.14 for some reason doesn't remove asm-all 4.1. Ew.
-		all {
-			exclude(group = "org.ow2.asm", module = "asm-debug-all")
-			exclude(group = "org.ow2.asm", module = "asm-all")
-		}
-	}
-
 	dependencies {
-		implementation("org.slf4j:slf4j-api:1.8.0-beta4")
-		implementation("org.apache.logging.log4j:log4j-slf4j18-impl:2.17.2")
-
-		implementation("org.apache.logging.log4j:log4j-core:2.17.2")
-		implementation("com.google.guava:guava:33.2.1-jre")
-		implementation("com.google.code.gson:gson:2.9.0")
-
 		minecraft("com.mojang:minecraft:b1.7.3")
 		mappings("net.glasslauncher:biny:${project.properties["yarn_mappings"]}:v2")
 		modImplementation("babric:fabric-loader:${project.properties["loader_version"]}")
 
-		"transitiveImplementation"("org.apache.commons:commons-lang3:3.12.0")
-		"transitiveImplementation"("commons-io:commons-io:2.11.0")
-		"transitiveImplementation"("net.jodah:typetools:${project.properties["typetools_version"]}")
-		"transitiveImplementation"("com.github.mineLdiver:UnsafeEvents:${project.properties["unsafeevents_version"]}")
-		"transitiveImplementation"("it.unimi.dsi:fastutil:${project.properties["fastutil_version"]}")
-		//noinspection GradlePackageUpdate
-		"transitiveImplementation"("com.github.ben-manes.caffeine:caffeine:${project.properties["caffeine_version"]}")
-		"transitiveImplementation"("com.mojang:datafixerupper:${project.properties["dfu_version"]}")
-		"transitiveImplementation"("maven.modrinth:spasm:${project.properties["spasm_version"]}")
+		implementation("org.apache.logging.log4j:log4j-core:2.17.2")
+
+		implementation("org.slf4j:slf4j-api:1.8.0-beta4")
+		implementation("org.apache.logging.log4j:log4j-slf4j18-impl:2.17.1")
 
 		// convenience stuff
 		// adds some useful annotations for data classes. does not add any dependencies
-		compileOnly("org.projectlombok:lombok:1.18.30")
-		annotationProcessor("org.projectlombok:lombok:1.18.30")
-		testCompileOnly("org.projectlombok:lombok:1.18.30")
-		testAnnotationProcessor("org.projectlombok:lombok:1.18.30")
+		compileOnly("org.projectlombok:lombok:1.18.24")
+		annotationProcessor("org.projectlombok:lombok:1.18.24")
 
 		// adds some useful annotations for miscellaneous uses. does not add any dependencies, though people without the lib will be missing some useful context hints.
 		implementation("org.jetbrains:annotations:23.0.0")
+		implementation("com.google.guava:guava:33.2.1-jre")
 
 		// StAPI itself.
 		// transitiveImplementation tells babric loom that you want this dependency to be pulled into other mod's development workspaces. Best used ONLY for required dependencies.
@@ -102,8 +72,6 @@ allprojects
 		modImplementation("maven.modrinth:spawn-eggs:${project.properties["spawneggs_version"]}")
 		// https://github.com/paulevsGitch/BHCreative
 		modImplementation ("com.github.paulevsGitch:BHCreative:${project.properties["bhcreative_version"]}")
-
-		annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.4.1")
 	}
 
 	loom {

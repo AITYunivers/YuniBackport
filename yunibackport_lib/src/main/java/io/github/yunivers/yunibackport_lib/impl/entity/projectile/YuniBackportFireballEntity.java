@@ -1,4 +1,4 @@
-package io.github.yunivers.yunibackport_r0.impl.entity.projectile;
+package io.github.yunivers.yunibackport_lib.impl.entity.projectile;
 
 import net.minecraft.util.hit.HitResult;
 import net.modificationstation.stationapi.api.util.Util;

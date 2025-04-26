@@ -1,7 +1,7 @@
 package io.github.yunivers.yunibackport_r0.structure.fortress;
 
 import io.github.yunivers.yunibackport_r0.entity.mob.BlazeEntity;
-import io.github.yunivers.yunibackport_r0.structure.*;
+import io.github.yunivers.yunibackport_lib.structure.*;
 import net.minecraft.entity.mob.PigZombieEntity;
 import net.minecraft.world.biome.EntitySpawnGroup;
 import net.minecraft.world.gen.carver.Carver;

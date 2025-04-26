@@ -1,6 +1,6 @@
-package io.github.yunivers.yunibackport_r0.structure;
+package io.github.yunivers.yunibackport_lib.structure;
 
-import io.github.yunivers.yunibackport_r0.util.WeightedRandom;
+import io.github.yunivers.yunibackport_lib.util.WeightedRandom;
 import lombok.Getter;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.ChestBlockEntity;

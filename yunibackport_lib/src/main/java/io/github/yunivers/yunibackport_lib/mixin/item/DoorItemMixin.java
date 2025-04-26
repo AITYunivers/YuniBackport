@@ -1,7 +1,7 @@
-package io.github.yunivers.yunibackport_r0.mixin.item;
+package io.github.yunivers.yunibackport_lib.mixin.item;
 
 import com.llamalad7.mixinextras.sugar.Local;
-import io.github.yunivers.yunibackport_r0.impl.item.YuniBackportDoorItem;
+import io.github.yunivers.yunibackport_lib.impl.item.YuniBackportDoorItem;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.DoorItem;

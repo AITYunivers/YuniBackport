@@ -5,9 +5,8 @@ import io.github.yunivers.yunibackport_r0.item.NetherWartSeeds;
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.modificationstation.stationapi.api.event.registry.ItemRegistryEvent;
 import net.modificationstation.stationapi.api.template.item.TemplateItem;
-import net.modificationstation.stationapi.api.template.item.TemplateSeedsItem;
 
-import static io.github.yunivers.yunibackport_r0.events.init.InitListener.NAMESPACE;
+import static io.github.yunivers.yunibackport_lib.YuniBackport.NAMESPACE;
 
 public class InitItems
 {

@@ -1,6 +1,6 @@
-package io.github.yunivers.yunibackport_r0.structure;
+package io.github.yunivers.yunibackport_lib.structure;
 
-import io.github.yunivers.yunibackport_r0.util.WeightedRandomChoice;
+import io.github.yunivers.yunibackport_lib.util.WeightedRandomChoice;
 
 public class StructurePieceTreasure extends WeightedRandomChoice
 {

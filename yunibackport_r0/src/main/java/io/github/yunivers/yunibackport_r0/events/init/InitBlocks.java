@@ -10,7 +10,7 @@ import net.minecraft.block.material.Material;
 import net.modificationstation.stationapi.api.event.registry.BlockRegistryEvent;
 import net.modificationstation.stationapi.api.template.block.TemplateBlock;
 
-import static io.github.yunivers.yunibackport_r0.events.init.InitListener.NAMESPACE;
+import static io.github.yunivers.yunibackport_lib.YuniBackport.NAMESPACE;
 
 public class InitBlocks
 {

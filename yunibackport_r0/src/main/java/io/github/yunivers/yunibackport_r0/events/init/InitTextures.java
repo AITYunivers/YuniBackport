@@ -6,7 +6,7 @@ import net.modificationstation.stationapi.api.client.event.texture.TextureRegist
 import net.modificationstation.stationapi.api.client.texture.atlas.Atlases;
 import net.modificationstation.stationapi.api.client.texture.atlas.ExpandableAtlas;
 
-import static io.github.yunivers.yunibackport_r0.events.init.InitListener.NAMESPACE;
+import static io.github.yunivers.yunibackport_lib.YuniBackport.NAMESPACE;
 
 public class InitTextures
 {

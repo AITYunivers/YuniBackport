@@ -1,7 +1,6 @@
 package io.github.yunivers.yunibackport_r0.structure.fortress;
 
-import io.github.yunivers.yunibackport_r0.structure.StructureComponent;
-import io.github.yunivers.yunibackport_r0.structure.StructureStart;
+import io.github.yunivers.yunibackport_lib.structure.*;
 import io.github.yunivers.yunibackport_r0.structure.fortress.component.NetherFortressComponentStartPiece;
 import net.minecraft.world.World;
 

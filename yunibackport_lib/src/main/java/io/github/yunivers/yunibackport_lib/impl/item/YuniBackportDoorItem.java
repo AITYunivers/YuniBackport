@@ -1,4 +1,4 @@
-package io.github.yunivers.yunibackport_r0.impl.item;
+package io.github.yunivers.yunibackport_lib.impl.item;
 
 import net.minecraft.block.Block;
 import net.minecraft.world.World;

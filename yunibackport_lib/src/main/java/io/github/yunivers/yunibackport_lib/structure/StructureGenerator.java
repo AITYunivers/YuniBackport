@@ -1,7 +1,7 @@
-package io.github.yunivers.yunibackport_r0.structure;
+package io.github.yunivers.yunibackport_lib.structure;
 
-import io.github.yunivers.yunibackport_r0.events.init.InitListener;
-import io.github.yunivers.yunibackport_r0.util.ChunkCoordIntPair;
+import io.github.yunivers.yunibackport_lib.YuniBackport;
+import io.github.yunivers.yunibackport_lib.util.ChunkCoordIntPair;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.ChunkSource;
@@ -29,7 +29,7 @@ public abstract class StructureGenerator extends Carver
         this.random.nextInt();
         if (this.canSpawnStructureAtCoords(n, n2)) {
             StructureStart structureStart = this.getStructureStart(n, n2);
-            InitListener.LOGGER.info("Spawned Fortress at ({}, {}, {})", n * 16 + 8, 65, n2 * 16 + 8);
+            YuniBackport.LOGGER.info("Spawned Fortress at ({}, {}, {})", n * 16 + 8, 65, n2 * 16 + 8);
             this.coordMap.put(ChunkCoordIntPair.chunkXZ2Int(n, n2), structureStart);
         }
     }
