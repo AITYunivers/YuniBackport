@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "yunibackport_lib",
+  "version": "${version}",
+
+  "name": "YuniBackport Library",
+  "description": "A common library for YuniBackport",
+  "authors": [
+    "Yunivers"
+  ],
+  "contact": {
+    "homepage": "https://github.com/AITYunivers/YuniBackport",
+    "sources": "https://github.com/AITYunivers/YuniBackport",
+    "issues": "https://github.com/AITYunivers/YuniBackport/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/yunibackport_lib/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "stationapi:event_bus": [
+    ],
+    "stationapi:event_bus_client": [
+    ],
+    "stationapi:event_bus_server": [
+    ]
+  },
+  "mixins": [
+    "yunibackport_lib.mixins.json"
+  ],
+  "accessWidener": "yunibackport_lib.accesswidener",
+
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "1.0.0-beta.7.3"
+  },
+
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/entity/Entity" : [
+        "io/github/yunivers/yunibackport_lib/impl/entity/YuniBackportEntity"
+      ],
+      "net/minecraft/entity/projectile/FireballEntity" : [
+        "io/github/yunivers/yunibackport_lib/impl/entity/projectile/YuniBackportFireballEntity"
+      ],
+      "net/minecraft/item/DoorItem" : [
+        "io/github/yunivers/yunibackport_lib/impl/item/YuniBackportDoorItem"
+      ]
+    }
+  }
+}

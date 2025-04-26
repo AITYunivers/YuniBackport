@@ -4,9 +4,6 @@
   "package": "io.github.yunivers.yunibackport_r0.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "entity.EntityMixin",
-    "entity.projectile.FireballEntityMixin",
-    "item.DoorItemMixin",
     "world.gen.chunk.NetherChunkGeneratorMixin"
   ],
   "server": [

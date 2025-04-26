@@ -1,57 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "yunibackport_r0",
+  "id": "yunibackport",
   "version": "${version}",
 
-  "name": "YuniBackport r1.0",
+  "name": "YuniBackport",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
     "Yunivers"
   ],
   "contact": {
-    "homepage": "https://glass-launcher.net/",
-    "sources": "https://github.com/calmilamsy/stationapi-example-mod"
+    "homepage": "https://github.com/AITYunivers/YuniBackport",
+    "sources": "https://github.com/AITYunivers/YuniBackport",
+    "issues": "https://github.com/AITYunivers/YuniBackport/issues"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/yunibackport_r0/icon.png",
+  "license": "MIT",
+  "icon": "assets/yunibackport/icon.png",
 
   "environment": "*",
-  "entrypoints": {
-    "stationapi:event_bus": [
-      "io.github.yunivers.yunibackport_r0.events.init.InitListener",
-      "io.github.yunivers.yunibackport_r0.events.init.InitItems",
-      "io.github.yunivers.yunibackport_r0.events.init.InitBlocks"
-    ],
-    "stationapi:event_bus_client": [
-      "io.github.yunivers.yunibackport_r0.events.init.InitEntityRenderers",
-      "io.github.yunivers.yunibackport_r0.events.init.InitTextures",
-      "io.github.yunivers.yunibackport_r0.events.init.InitSpawnEggs"
-    ],
-    "stationapi:event_bus_server": [
-    ]
-  },
-  "mixins": [
-    "yunibackport_r0.mixins.json"
-  ],
-  "accessWidener": "yunibackport_r0.accesswidener",
 
   "depends": {
+    "java": ">=17",
     "fabricloader": "*",
-    "minecraft": "1.0.0-beta.7.3"
-  },
-
-  "custom": {
-    "loom:injected_interfaces": {
-      "net/minecraft/entity/Entity" : [
-        "io/github/yunivers/yunibackport_r0/impl/entity/YuniBackportEntity"
-      ],
-      "net/minecraft/entity/projectile/FireballEntity" : [
-        "io/github/yunivers/yunibackport_r0/impl/entity/projectile/YuniBackportFireballEntity"
-      ],
-      "net/minecraft/item/DoorItem" : [
-        "io/github/yunivers/yunibackport_r0/impl/item/YuniBackportDoorItem"
-      ]
-    }
+    "minecraft": "1.0.0-beta.7.3",
+    "yunibackport_lib": "*",
+    "yunibackport_r0": "*"
   }
 }

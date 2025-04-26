@@ -6,3 +6,9 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
+rootProject.name = "YuniBackport"
+
+include(":yunibackport_lib")
+
+include(":yunibackport_r0")

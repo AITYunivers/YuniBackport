@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "yunibackport_r0",
+  "version": "${version}",
+
+  "name": "YuniBackport r1.0",
+  "description": "YuniBackport Release 1.0.0",
+  "authors": [
+    "Yunivers"
+  ],
+  "contact": {
+    "homepage": "https://github.com/AITYunivers/YuniBackport",
+    "sources": "https://github.com/AITYunivers/YuniBackport",
+    "issues": "https://github.com/AITYunivers/YuniBackport/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/yunibackport_r0/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "stationapi:event_bus": [
+      "io.github.yunivers.yunibackport_r0.events.init.InitListener",
+      "io.github.yunivers.yunibackport_r0.events.init.InitItems",
+      "io.github.yunivers.yunibackport_r0.events.init.InitBlocks"
+    ],
+    "stationapi:event_bus_client": [
+      "io.github.yunivers.yunibackport_r0.events.init.InitEntityRenderers",
+      "io.github.yunivers.yunibackport_r0.events.init.InitTextures",
+      "io.github.yunivers.yunibackport_r0.events.init.InitSpawnEggs"
+    ],
+    "stationapi:event_bus_server": [
+    ]
+  },
+  "mixins": [
+    "yunibackport_r0.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "1.0.0-beta.7.3"
+  },
+}
