@@ -1,0 +1,10 @@
+# Blocks
+tile.yunibackport_r0.nether_brick.name=Nether Brick
+tile.yunibackport_r0.nether_brick_stairs.name=Nether Brick Stairs
+tile.yunibackport_r0.nether_brick_fence.name=Nether Brick Fence
+tile.yunibackport_r0.nether_wart_crop.name=Nether Wart
+
+# Items
+item.yunibackport_r0.blaze_rod.name=Blaze Rod
+item.yunibackport_r0.blaze_powder.name=Blaze Powder
+item.yunibackport_r0.nether_wart.name=Nether Wart

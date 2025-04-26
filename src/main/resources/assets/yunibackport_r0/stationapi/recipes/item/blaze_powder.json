@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yunibackport_r0:blaze_rod"
+    }
+  ],
+  "result": {
+    "item": "yunibackport_r0:blaze_powder",
+    "count": 2
+  }
+}

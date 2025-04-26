@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "%s",
+  "id": "yunibackport_r0",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "YuniBackport r1.0",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Yunivers"
   ],
   "contact": {
     "homepage": "https://glass-launcher.net/",
@@ -14,23 +14,44 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/%s/icon.png",
+  "icon": "assets/yunibackport_r0/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
-      "%s.events.init.InitListener"
+      "io.github.yunivers.yunibackport_r0.events.init.InitListener",
+      "io.github.yunivers.yunibackport_r0.events.init.InitItems",
+      "io.github.yunivers.yunibackport_r0.events.init.InitBlocks"
     ],
     "stationapi:event_bus_client": [
+      "io.github.yunivers.yunibackport_r0.events.init.InitEntityRenderers",
+      "io.github.yunivers.yunibackport_r0.events.init.InitTextures",
+      "io.github.yunivers.yunibackport_r0.events.init.InitSpawnEggs"
     ],
     "stationapi:event_bus_server": [
     ]
   },
   "mixins": [
-    "%s.mixins.json"
+    "yunibackport_r0.mixins.json"
   ],
+  "accessWidener": "yunibackport_r0.accesswidener",
 
   "depends": {
+    "fabricloader": "*",
     "minecraft": "1.0.0-beta.7.3"
+  },
+
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/entity/Entity" : [
+        "io/github/yunivers/yunibackport_r0/impl/entity/YuniBackportEntity"
+      ],
+      "net/minecraft/entity/projectile/FireballEntity" : [
+        "io/github/yunivers/yunibackport_r0/impl/entity/projectile/YuniBackportFireballEntity"
+      ],
+      "net/minecraft/item/DoorItem" : [
+        "io/github/yunivers/yunibackport_r0/impl/item/YuniBackportDoorItem"
+      ]
+    }
   }
 }

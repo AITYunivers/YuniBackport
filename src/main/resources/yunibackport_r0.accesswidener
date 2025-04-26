@@ -1,0 +1,3 @@
+accessWidener v2 named
+
+accessible method net/minecraft/entity/EntityRegistry register (Ljava/lang/Class;Ljava/lang/String;I)V
